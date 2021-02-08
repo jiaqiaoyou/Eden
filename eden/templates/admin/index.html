@@ -1,0 +1,22 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+{{ super() }}
+<div class="text-center">
+    {% for i in range(5) %}
+    <br>
+    {% endfor %}
+    欢迎你 {{user_name}}
+    {% for i in range(5) %}
+    <br>
+    {% endfor %}
+    这里是 {{name}} 的管理系统
+    {% for i in range(5) %}
+    <br>
+    {% endfor %}
+    {{ link | safe }}
+    {% for i in range(10) %}
+    <br>
+    {% endfor %}
+    开发者：尤家荞
+</div>
+{% endblock body %}
